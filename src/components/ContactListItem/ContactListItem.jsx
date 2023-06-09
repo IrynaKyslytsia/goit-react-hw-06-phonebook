@@ -4,19 +4,15 @@ import { useDispatch } from "react-redux";
 import { Text, DeleteBtn } from 'components/ContactListItem/ContactListItem.styled';
 import { deleteContact } from 'redux/contactsSlice';
 
-const ContactListItem = ({ name, number }) => {
+const ContactListItem = ({ name, number, id }) => {
     const dispatch = useDispatch();
-
-    const onDelete = id => {
-        dispatch(deleteContact(id))
-    }
 
     return (
         <>
             <Text>{name}: {number}</Text>
             <DeleteBtn 
             type="button" 
-            onClick={onDelete}>Delete</DeleteBtn>
+            onClick={() => {dispatch(deleteContact(id))}}>Delete</DeleteBtn>
         </>
      );
         };
