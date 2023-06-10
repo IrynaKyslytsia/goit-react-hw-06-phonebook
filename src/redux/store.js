@@ -17,7 +17,7 @@ import { combineReducers } from 'redux';
 const commonReducer = combineReducers({ contacts, filter });
 
 const persistConfig = {
-  key: 'root',
+  key: 'contacts',
   storage,
   blacklist: ['filter'],
 };

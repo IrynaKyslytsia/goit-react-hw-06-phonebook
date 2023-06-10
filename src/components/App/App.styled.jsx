@@ -1,9 +1,10 @@
 import styled from '@emotion/styled';
 
 export const Container = styled.div`
-    width: 960px;
+    width: 680px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 30px;
 `;
 
 export const MainTitle = styled.h1`

@@ -9,6 +9,6 @@ export const FilterLabel = styled.label`
 
 export const FilterInput = styled.input`
     padding: 8px;
-    width: 280px;
+    width: 340px;
     border-radius: 4px;
 `;
