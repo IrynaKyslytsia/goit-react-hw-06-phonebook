@@ -23,6 +23,7 @@ const persistConfig = {
 };
 
 const persistedContactsReducer = persistReducer(persistConfig, commonReducer);
+
 export const store = configureStore({
   reducer: {
     app: persistReducer(persistConfig, persistedContactsReducer),
